@@ -1,0 +1,54 @@
+/* Navbar background color */
+.custom-navbar {
+    background-color: #020f26;
+}
+
+/* Make navbar links white */
+.custom-navbar .nav-link {
+    color: white !important;
+}
+
+/* Center the navbar brand on large screens */
+.navbar-brand {
+    color: white !important;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Change the border color of the toggle button to white */
+/* Default toggle button styles */
+.navbar-toggler {
+    border-color: white !important;
+}
+
+/* Change the icon color to white */
+.navbar-toggler-icon {
+    background-image: none;
+    width: 24px;
+    height: 24px;
+    background-color: white; /* Default background color */
+    position: relative;
+}
+
+/* Styles for when the toggle button is active or selected */
+.navbar-toggler.collapsed {
+    background-color: #ffffff; /* Background color when inactive */
+}
+
+.navbar-toggler:not(.collapsed) {
+    background-color: #ffffff; /* Background color when active */
+    border-color: #ffffff !important; /* Ensure border color is also white */
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-color: #ffffff; /* Background color for icon when active */
+}
+
+
+/* On smaller screens, reset the brand position to static */
+@media (max-width: 991.98px) {
+    .navbar-brand {
+        position: static;
+        transform: none;
+    }
+}
