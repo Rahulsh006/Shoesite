@@ -52,3 +52,34 @@
         transform: none;
     }
 }
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: larger;
+}
+
+/* Apply Roboto font for other text */
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    gap: 16px; 
+    margin-right: 30px;
+    padding-bottom: 2;
+}
+
+/* Styling for individual icons */
+.navbar-icon {
+    width: 18px;
+    height: 18px; 
+}
+
+/* Remove margin from the last icon */
+.d-flex .navbar-icon:last-child {
+    margin-right: 0; /* Remove right margin for the last icon */
+}
