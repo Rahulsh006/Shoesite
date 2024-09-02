@@ -261,19 +261,26 @@
     line-height: 2rem;
 }
 
-/* Video container to handle responsiveness */
+/* Container for side-by-side videos */
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
-    height: 25%;
-    overflow: hidden;
-    max-width: 100%;
-    background: #000;
+    display: flex;
+    justify-content: space-between;
+    gap: 1px; /* Adjust space between videos */
     margin-top: 20px; /* Adjust as needed */
-    padding-bottom: 60%;
 }
 
-.video-container .responsive-video {
+/* Wrapper for individual videos */
+.video-wrapper {
+    flex: 1; /* Allow videos to grow and shrink */
+    position: relative;
+    padding-bottom: 30%; /* Adjust the height of the video container */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+/* Ensure videos fit their containers */
+.video-wrapper .responsive-video {
     position: absolute;
     top: 0;
     left: 0;
