@@ -58,6 +58,7 @@
     font-family: "New Amsterdam", sans-serif;
     font-weight: 500;
     font-style: normal;
+    font-size: larger;
 
 }
 
@@ -205,7 +206,7 @@
 .video-wrapper {
     flex: 1; /* Allow videos to grow and shrink */
     position: relative;
-    padding-bottom: 30%; /* Adjust the height of the video container */
+    padding-bottom: 25%; /* Adjust the height of the video container */
     height: 0;
     overflow: hidden;
     background: #000;
@@ -220,42 +221,135 @@
     height: 100%;
     object-fit: cover; /* Maintain aspect ratio */
 }
-
-  
-#car {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: #f5f5f5;
+.video-wrapper1 {
+    flex: 1; /* Allow videos to grow and shrink */
+    position: relative;
+    padding-bottom: 28%; /* Adjust the height of the video container */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+.video-wrapper1 .responsive-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio */
 }
 
-
-h1 {
+.men {
     text-align: center;
-    padding: 15px;
+    font-size: x-large;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 500;
+    color: #020f26;
+   
 }
+
+.head{
+    padding: 20px;
+    margin-top: 20px;
+   
+}
+
+/* General Styles for Product Grid */
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    justify-content: space-between; /* Distribute space between cards */
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
 }
+
+/* Product Card Styling */
 .product-card {
     background-color: white;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 6px;
+    text-align: center;
+    flex: 1 1 200px; /* Allows cards to grow and shrink */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
 }
+
+/* Product Image Styling */
 .product-image {
     width: 100%;
-    height: 200px;
+    height: auto;
     object-fit: cover;
-    background-color: #f0f0f0;
 }
+
+/* Product Name Styling */
 .product-name {
-    padding: 10px;
-    text-align: center;
+    padding: 5px;
+    font-size: 15px;
     font-weight: bold;
-    background-color: #f0f0f0;
+    color: #020f26;
+    text-align: left;
+}
+
+.product-name2 {
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #020f26;
+    text-align: left;
+}
+
+/* Hover Effect */
+.product-card:hover {
+    transform: translateY(-20px); /* Moves the card up */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .product-card {
+        flex-basis: calc(33.333% - 20px); /* 3 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .product-card {
+        flex-basis: calc(50% - 20px); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        flex-basis: calc(50% - 20px); /* 2 cards per row with space for margins */
+        margin-bottom: 20px; /* Margin between rows */
+    }
+}
+
+.custom-btn {
+    background-color:#d0d0d0 !important;
+    color: black !important;
+    border: none !important;
+    padding: 10px !important;
+  }
+
+  .rounded-pill {
+    border-radius: 50px !important;
+    padding: 5px;
+    font-family: "New Amsterdam", sans-serif !important;
+  }
+
+  .fa-filter {
+    font-size: 1.2rem;
+    margin-right: 5px;
+    
+  }
+
+.show{
+    margin-top:20px;
+}
+
+.form-check-label{
+    font-family: "New Amsterdam", sans-serif !important;
 }
