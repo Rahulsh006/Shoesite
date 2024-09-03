@@ -306,9 +306,10 @@
 .product-name2 {
     padding: 5px;
     font-size: 12px;
-    font-weight: bold;
-    color: #d0d0d0;
+    color: black  ;
     text-align: left;
+    
+    
 }
 
 /* Hover Effect */
@@ -329,7 +330,7 @@
 }
 
 .favorite-icon:hover {
-    color: white; /* Color on hover */
+    color: black; 
 }
 
 /* Cart Icon Styling */
