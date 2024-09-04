@@ -43,5 +43,37 @@ backButton.onclick = function(){
     carousel.classList.remove('showDetail');
 }
 
+// // loadcontentcode
 
+// document.getElementById("show-more-btn2").addEventListener("click", function() {
+//     var moreProducts = document.getElementById("more-products");
+
+//     // Toggle visibility of the product grid
+//     if (moreProducts.style.display === "none" || moreProducts.style.display === "") {
+//         moreProducts.style.display = "flex"; // Show the hidden product grid
+//         this.innerText = "SHOW LESS PRODUCTS"; // Change button text to "Show Less"
+//     } else {
+//         moreProducts.style.display = "none"; // Hide the product grid again
+//         this.innerText = "LOAD MORE PRODUCTS"; // Change button text back to "Load More"
+//     }
+// });
+
+document.getElementById("show-more-btn2").addEventListener("click", function() {
+    var moreProducts = document.getElementById("more-products");
+
+    // Toggle visibility of the product grid with transition
+    if (moreProducts.classList.contains("show")) {
+        moreProducts.classList.remove("show"); // Hide with transition
+        setTimeout(function() {
+            moreProducts.style.display = "none"; // Fully hide after transition
+        }, 500); // Wait for transition to finish
+        this.innerText = "LOAD MORE PRODUCTS"; // Change button text back to "Load More"
+    } else {
+        moreProducts.style.display = "flex"; // Show the product grid immediately
+        setTimeout(function() {
+            moreProducts.classList.add("show"); // Add transition effect
+        }, 10); // Delay for smooth transition start
+        this.innerText = "SHOW LESS PRODUCTS"; // Change button text to "Show Less"
+    }
+});
 

@@ -1133,3 +1133,33 @@ carousel main */
     }
 }
 
+#show-more-btn2{
+    background-color:white;
+    color: black;
+    padding: 10px 20px;
+    border-color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "New Amsterdam", sans-serif ;
+}
+
+#show-more-btn2:hover {
+    background-color:rgb(23, 23, 23);
+    color: rgb(255, 255, 255);
+
+}
+
+/* Initially hidden with a slight downward transform */
+#more-products {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px); /* Move down 20px */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transition */
+}
+
+/* Class that applies when products are visible */
+#more-products.show {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0); /* Move to original position */
+}
