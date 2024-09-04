@@ -1,6 +1,7 @@
 /* Navbar background color */
 .custom-navbar {
-    background-color: #020f26;
+    /* background-color: #020f26; */
+    background-color: #000000; 
 }
 .custom-navbar .nav-link {
     color: white !important;
@@ -44,24 +45,20 @@
     }
 }
 
-.new-amsterdam-regular {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: larger;
 
-}
 
 .roboto-font {
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     font-weight: 50;
 }
-/* .inter{
-font-family: 'Inter', sans-serif;
-font-size: 15px;
-font-weight: 50;
-} */
+
+.navmain{
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: xx-large;
+}
 .d-flex {
     display: flex;
     align-items: center;
@@ -83,7 +80,7 @@ font-weight: 50;
     opacity: 0.7; 
     transform: scale(1.1); 
     cursor: pointer; 
-    color: #b2bec3; 
+    color: #e0e5e5; 
 }
 
 
@@ -93,7 +90,7 @@ font-weight: 50;
 
 
 .navbar-nav .nav-link:hover {
-    color:  #b2bec3 !important; 
+    color:  #e0e5e5 !important; 
 }
 
 /* Navbar link hover effect (underline) */
@@ -110,7 +107,7 @@ font-weight: 50;
     bottom: -2px; 
     width: 100%; 
     height: 2px; 
-    background-color: #b2bec3; 
+    background-color: #e0e5e5; 
     transition: width 0.3s ease-in-out; 
 }
 @media (max-width: 991.98px) {
@@ -143,7 +140,7 @@ font-weight: 50;
 
 
 .secondary-navbar .nav-link:hover {
-    color: #b2bec3; 
+    color: #e0e5e5; 
 }
 
 /* Search bar styling */
@@ -235,7 +232,7 @@ font-weight: 50;
     font-size: x-large;
     font-family: "New Amsterdam", sans-serif;
     font-weight: 500;
-    color: #020f26;
+    color: #000000;
     padding: 30px;
    }
 /* 
@@ -344,19 +341,19 @@ carousel main */
     font-size: small;
     color: #5559;
 }
-.carousel .list .item .introduce .seeMore{
-    font-family: Poppins;
+.carousel .list .item .introduce .seeMore {
+    font-family: "New Amsterdam", sans-serif;   
     margin-top: 1.2em;
     padding: 5px 0;
     border: none;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid #000000;
     background-color: transparent;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 4px;
     transition: background 0.5s;
 }
 .carousel .list .item .introduce .seeMore:hover{
-    background: #eee;
+    color: #000000;
 }
 .carousel .list .item:nth-child(1){
     transform: var(--item1-transform);
@@ -581,13 +578,12 @@ carousel main */
     left: 50%;
     transform: translateX(-50%);
     border: none;
-    border-bottom: 1px solid #555;
-    font-family: Poppins;
+    border-bottom: 1px solid #000000;
+    font-family: "New Amsterdam", sans-serif;   
     font-weight: bold;
     letter-spacing: 3px;
     background-color: transparent;
     padding: 10px;
-    /* opacity: 0; */
     transition: opacity 0.5s;
 }
 .carousel.showDetail #back{
@@ -1258,13 +1254,13 @@ carousel main */
 
 .review-prompt {
     font-size: 1rem;
-    color: #000000;
+    color: #323232;
     margin-bottom: 15px;
     font-family: "New Amsterdam", sans-serif;
 }
 
 .review-button {
-    background-color: #353535;
+    background-color: #000000;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -1272,6 +1268,7 @@ carousel main */
     cursor: pointer;
     font-size: 1rem;
     transition: background-color 0.3s ease;
+    font-family: "New Amsterdam", sans-serif;
 }
 
 .review-button:hover {
@@ -1291,5 +1288,298 @@ carousel main */
     .review-button {
         font-size: 0.9rem;
         padding: 8px 16px;
+    }
+}
+
+
+
+/* Hero Section Container */
+.hero-section {
+    background-image: url('./Assets/lastbanner.png'); /* Use your background image */
+    background-size: cover; /* Ensures the image covers the whole section */
+    background-position: center; /* Centers the background image */
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    text-align: center; /* Ensures text is centered */
+    padding: 20px; /* Adds some padding */
+    color: white; /* Text color */
+    position: relative; /* Ensures content overlays the background */
+    z-index: 1;
+    overflow: hidden;
+}
+
+/* Add a dark overlay for better readability on background */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: -1; /* Ensures the overlay is behind the content */
+}
+
+/* Hero Styling */
+.hero-section{
+    margin-top: 30px;
+}
+.hero-content {
+    max-width: 600px;
+    padding: 20px;
+    
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.hero-button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .hero-section {
+        height: 350px; 
+    }
+    
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-button {
+        font-size: 0.9rem;
+        padding: 8px 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px; 
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        height: 250px; /* Even smaller for mobile screens */
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        font-size: 0.8rem;
+        padding: 6px 14px;
+    }
+}
+
+
+
+.warranty-section {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.warranty-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    gap:5px ;
+}
+
+.warranty-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.warranty-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%; /* Ensures footer takes up full width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.footer-container {
+    max-width: 1200px; /* Maximum width for the content */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add some padding for smaller screens */
+}
+
+.footer-top {
+    margin-bottom: 40px;
+}
+
+.footer-logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-text {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-buttons button {
+    background-color: #ffffff;
+    color: #000;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.footer-buttons button:hover {
+    
+    background-color: #000;
+    color:  #ffffff;
+}
+
+.plus-sign {
+    font-size: 18px;
+    vertical-align: super;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: left;
+}
+
+.footer-column {
+    margin: 20px 10px;
+    width: 180px;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.flag-icon {
+    width: 20px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.footer-social i {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+}
+
+.footer-social i:hover {
+    opacity: 0.7;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-column {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-column {
+        width: 100%;
     }
 }
