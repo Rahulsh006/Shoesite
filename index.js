@@ -43,20 +43,7 @@ backButton.onclick = function(){
     carousel.classList.remove('showDetail');
 }
 
-// // loadcontentcode
 
-// document.getElementById("show-more-btn2").addEventListener("click", function() {
-//     var moreProducts = document.getElementById("more-products");
-
-//     // Toggle visibility of the product grid
-//     if (moreProducts.style.display === "none" || moreProducts.style.display === "") {
-//         moreProducts.style.display = "flex"; // Show the hidden product grid
-//         this.innerText = "SHOW LESS PRODUCTS"; // Change button text to "Show Less"
-//     } else {
-//         moreProducts.style.display = "none"; // Hide the product grid again
-//         this.innerText = "LOAD MORE PRODUCTS"; // Change button text back to "Load More"
-//     }
-// });
 
 document.getElementById("show-more-btn2").addEventListener("click", function() {
     var moreProducts = document.getElementById("more-products");

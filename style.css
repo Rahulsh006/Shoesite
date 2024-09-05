@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&display=swap');
+
+  
 /* Navbar background color */
 .custom-navbar {
     /* background-color: #020f26; */
@@ -45,7 +48,13 @@
     }
 }
 
-
+.new-amsterdam-regular {
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  
 
 .roboto-font {
     font-family: "Roboto", sans-serif;
@@ -53,12 +62,7 @@
     font-weight: 50;
 }
 
-.navmain{
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 550;
-    font-style: normal;
-    font-size: xx-large;
-}
+
 .d-flex {
     display: flex;
     align-items: center;
@@ -869,13 +873,13 @@ carousel main */
 .product-card:hover {
     transform: translateY(-20px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .product-card1:hover {
     transform: translateY(-20px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 
 .product-card1:nth-child(1):hover .product-image {
@@ -1220,6 +1224,137 @@ carousel main */
     text-align: center;
 }
 
+/* < SHOE MOVIGNGALLERY --> */
+
+
+
+
+.wrapperp {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerp {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.cardp {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.cardp > .rowp {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cardp > .rowp > .icongt {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.cardp > .rowp > .descriptionp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 80px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+
+
+.descriptionp h4 {
+    text-transform: uppercase;
+    font-family: "New Amsterdam", sans-serif;
+    color: #000;
+    margin-top: 5px;
+
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+/* Updated selector */
+input:checked + label .descriptionp {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.cardp[for="c1"] {
+    background-image: url('./Assets/sensifit1.png');
+}
+.cardp[for="c2"] {
+    background-image: url('./Assets/sensifit2.png');
+}
+.cardp[for="c3"] {
+    background-image: url('./Assets/sensifit3.png');
+}
+.cardp[for="c4"] {
+    background-image: url('./Assets/sensifit4.png');
+}
+.cardp[for="c5"] {
+    background-image: url('./Assets/sensifit5.png');
+}
+.cardp[for="c6"] {
+    background-image: url('./Assets/sensifit6.png');
+}
+
+
+
+
+
+
+
+
+.space2{
+    margin-bottom: 20px;
+}
+
+.present{
+    font-size: large;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 450;
+    color: #000000;
+    text-align: center;
+
+}
+
+
+
+
 .space{
     margin-top: 25px;
     
@@ -1291,7 +1426,64 @@ carousel main */
     }
 }
 
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgb(185, 185, 185);
+    z-index: 10;
+    margin-left: 50px;
 
+}
+
+.carousel-caption h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: "New Amsterdam", sans-serif;
+    
+}
+
+.carousel-caption p {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    font-family: "Roboto", sans-serif;
+    color: #ced4da;
+}
+
+.carousel-caption .btn {
+    background-color: transparent;
+    border: 2px solid rgb(225, 225, 225);
+    color: #f5f5f5;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 0px;
+    font-family: "New Amsterdam", sans-serif;
+}
+
+.carousel-caption .btn:hover{
+    background-color: white;
+    color: black;
+
+}
+
+.carousel-item {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-inner {
+    height: 100vh;
+}
+
+.carousel-indicators {
+    z-index: 11; /* Ensure carousel indicators are above the video */
+}
 
 /* Hero Section Container */
 .hero-section {
